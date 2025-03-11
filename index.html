@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Manga Bookstore</h1>
+        <p>Your one-stop shop for the best manga books!</p>
+        <video controls>
+            <source src="manga_intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about manga and offer a wide range of titles for manga lovers everywhere. Whether you're new to manga or a seasoned fan, we have something for everyone.</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>Our Manga Collection</h2>
+        <ul>
+            <li>One Piece - $10.99</li>
+            <li>Naruto - $12.99</li>
+            <li>Dragonball - $8.99</li>
+            <li>Attack on titan - $15.99</li>
+        </ul>
+        <p>Browse our extensive collection of manga books, from popular series to hidden gems!</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Join Our Team</h2>
+        <p>We're always looking for passionate individuals to join our manga-loving team! we always need translator</p>
+        <form action="submit_resume.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us and we'll get back to you as soon as possible!</p>
+        <form action="submit_contact.php" method="POST">
+            <label for="contact-name">Full Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required><br>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Manga Bookstore. All rights reserved.</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
